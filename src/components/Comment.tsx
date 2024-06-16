@@ -1,6 +1,8 @@
 import React from 'react';
 import { Comment } from '../types';
 
+//Comment structure
+
 interface Props {
   comment: Comment;
 }

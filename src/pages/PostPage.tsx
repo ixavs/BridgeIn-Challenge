@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Post, Comment } from '../types';
 import CommentModal from '../components/CommentModal';
 
+//Page for each Post
+
 interface Props {
   posts: Post[];
   comments: Comment[];
@@ -31,7 +33,7 @@ const PostPage: React.FC<Props> = ({ posts, comments, addComment, updateComment,
   };
 
   const handleSaveComment = (comment: Comment) => {
-    if (!postId) return; // Ensure postId is defined
+    if (!postId) return; 
 
     if (commentToEdit) {
       updateComment(comment);
@@ -53,7 +55,7 @@ const PostPage: React.FC<Props> = ({ posts, comments, addComment, updateComment,
       <p>{post?.body}</p>
       <div className="d-flex justify-content-between align-items-center">
         <h4>Comments</h4>
-        <button className="btn btn-primary mb-4 btn-sm" onClick={() => handleShowModal()}>
+        <button className="btn btn-sm btn-primary mb-4" onClick={() => handleShowModal()}>
           Add Comment
         </button>
       </div>
@@ -82,7 +84,7 @@ const PostPage: React.FC<Props> = ({ posts, comments, addComment, updateComment,
         onSave={handleSaveComment}
         commentToEdit={commentToEdit}
         lastPostId={postId}
-        nextCommentId={nextCommentId} // Pass the next comment ID
+        nextCommentId={nextCommentId} 
       />
     </div>
   );

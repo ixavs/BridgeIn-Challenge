@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { Comment } from '../types';
 
+//Component to manage Comments
+
 interface Props {
   show: boolean;
   onHide: () => void;
   onSave: (comment: Comment) => void;
   commentToEdit?: Comment | null;
   lastPostId: number | undefined;
-  nextCommentId: number; // Add this prop to track the next comment ID
+  nextCommentId: number; 
 }
 
 const CommentModal: React.FC<Props> = ({ show, onHide, onSave, commentToEdit, lastPostId, nextCommentId }) => {

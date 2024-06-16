@@ -2,6 +2,8 @@
 import React from 'react';
 import { Post } from '../types';
 
+//Post structure
+
 interface Props {
   post: Post;
 }

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { Modal, Button, Form } from 'react-bootstrap';
 import { Post } from '../types';
 
+//Home page
+
 interface Props {
   posts: Post[];
   addPost: (newPost: Post) => void;
@@ -48,7 +50,7 @@ const Home: React.FC<Props> = ({ posts, addPost }) => {
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
                 <p className="card-text">{post.body}</p>
-                <Link to={`/posts/${post.id}`} className="btn btn-primary">
+                <Link to={`/posts/${post.id}`} className="btn btn-sm btn-primary">
                   View Details
                 </Link>
               </div>
@@ -83,10 +85,10 @@ const Home: React.FC<Props> = ({ posts, addPost }) => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
+          <Button className='btn btn-sm' variant="secondary" onClick={handleCloseModal}>
             Close
           </Button>
-          <Button className='btn-sm' variant="primary" onClick={handleSavePost}>
+          <Button className='btn btn-sm' variant="primary" onClick={handleSavePost}>
             Save changes
           </Button>
         </Modal.Footer>

@@ -7,8 +7,12 @@ This project came up as a challenge to quickly develop an platform to create pos
 - Explore existing Posts
 ![homeScreen](images/homeScreen.png)
 - Add new posts
+![addNewPost](images/newPost.png)
 - Check out the posts for comments
+![addNewPost](images/postPage.png)
 - Add, delete and edit the comments
+![addNewPost](images/newComment.png)
+![EditPost](images/editComment.png)
 
 ## Available Scripts
 
