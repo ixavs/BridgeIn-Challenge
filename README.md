@@ -5,7 +5,7 @@ This project came up as a challenge to quickly develop an platform to create pos
 ## Functionalities
 
 - Explore existing Posts
-![homeScreen](../images/homeScreen.png)
+![homeScreen](images/homeScreen.png)
 - Add new posts
 - Check out the posts for comments
 - Add, delete and edit the comments
